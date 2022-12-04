@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;700&display=swap');
+
+/* fontes (100; 400, 700)
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 12pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+	min-height: 50px;
+}
+
+.chamada {
+	background: url("img/ibira.jpg") no-repeat fixed center bottom;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.chamada > p {
+	margin: 0.5em auto;
+}
+
+.chamada .p0 {
+	font-size: 1.5em;
+}
+
+.chamada .p1, .chamada .p2 {
+	font-size: 2em;
+}
+
+.chamada .p2 {
+	font-weight: 700;
+}
+
+.chamada .p3 {
+	font-size: 1.1em;
+	margin-top: 2em;
+}
