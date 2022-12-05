@@ -30,6 +30,7 @@
 			$mail->addAddress($email);
 
 			$mail->isHTML(true);
+      $mail->CharSet = 'UTF-8';
 			$mail->Subject = 'Presença confirmada!';
 			$mail->Body = "Sua confirmação foi enviada com sucesso! Confira sua mensagem: <hr> $mensagemDela";
 
@@ -37,7 +38,6 @@
         echo "<script> console.log('E-mail de confirmação enviado com sucesso!') </script>";
       } else {
 				echo "<script> alert('ERRO: resposta não enviada!') </script>";
-				echo "<meta http-equiv='refresh' content='0; index.php'>";
 			} // if mail send
 		} catch (Exception $e) {
 			echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
@@ -66,10 +66,10 @@
         echo "<script> console.log('E-mail para adm enviado com sucesso!') </script>";
       } else {
 				echo "<script> alert('ERRO: resposta não enviada!') </script>";
-				echo "<meta http-equiv='refresh' content='0; index.php'>";
 			} // if mail send
 		} catch (Exception $e) {
 			echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
 		} // try contrução e-mail
+    echo "<meta http-equiv='refresh' content='0; index.html'>";
   } // if isset btnSubmit
 ?>
