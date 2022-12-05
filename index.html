@@ -7,7 +7,7 @@
 
 		<link rel="stylesheet" href="index.css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 		<title>Aceitas un ibira?</title>
 	</head>
@@ -18,14 +18,19 @@
 
 		<main>
 			<section class="chamada">
-				<p class="p0">Um dia conosco</p>
-				<p class="p1">Para nunca mais esquecer</p>
-				<p class="p2">Apenas em XX/12</p>
-				<p class="p3">Aceitas?</p>
-				<button>Ver vantagens</button>
+				<div class="txt-chamada">
+					<p class="p0">Um dia conosco</p>
+					<p class="p1">Para nunca mais esquecer</p>
+					<p class="p2">Apenas em XX/12</p>
+					<p class="p3">Aceitas?</p>
+
+					<a href="#meio">
+						<button>Ver vantagens</button>
+					</a>
+				</div>
 			</section>
 
-			<section class="meio">
+			<section class="meio" id="meio">
 				<div class="introducao">
 					<h2>Por que ir ao Ibirapuera com a gente?</h2>
 
@@ -36,32 +41,31 @@
 					<div class="divercao">
 						<h3>Se divertir como nunca</h3>
 
-						<div class="img-divercao"></div>
+						<div class="img-vantagens img-divercao"></div>
 
 						<div class="txt-divercao">Convenhamos, quem ficaria triste com essa turminha do barulho? (100% tem timidez)</div>
 					</div> <!-- divercao -->
 
 					<div class="alimentacao">
-						<h3></h3>
+						<h3>Alimentação de qualidade</h3>
 
-						<div class="img-alimentacao"></div>
+						<div class="img-vantagens img-alimentacao"></div>
 
-						<div class="txt-alimentacao"></div>
+						<div class="txt-alimentacao">Aqui eu já não garanto tanto, mas quem sabe a gente finge ser saudável e faz um pique-nique decente no lugar de comer fast food!</div>
 					</div> <!-- alimentacao -->
 
 					<div class="sol">
-						<h3></h3>
+						<h3>Tomar sol</h3>
 
-						<div class="img-sol"></div>
+						<div class="img-vantagens img-sol"></div>
 
-						<div class="txt-sol"></div>
+						<div class="txt-sol">Você sabia que é importante  sol de vez em quando? Pois é, quero ver esse exame de sangue aí (auto-crítica)</div>
 					</div> <!-- sol -->
 				</div> <!-- vantagens -->
 
 				<div class="ameaca">
-					<p>Chegou aqui e ainda não se convenceu?</p>
-					<p>Pare de mentir e termine de ler o convite!</p>
-					<p>[emoji psicótico] [emoji arma]</p>
+					<p class="p0">Chegou aqui e ainda não se convenceu?</p>
+					<p class="p1">Pare de mentir e termine de ler o convite!</p>
 				</div>
 			</section> <!-- meio -->
 
@@ -69,14 +73,13 @@
 				<div class="passo-a-passo">
 					<p>Para confirmar sua ida, basta prencher:</p>
 
-					<ul>
-						<li>1. Seu nome</li>
-						<li>2. E-mail para receber</li>
-						<li>o comprovante</li>
-						<li>3. Uma mensagem que quiser</li>
-						<li>4. Clicar em "Confirmar"</li>
-						<li>5. E está pronto o sorvetinho!</li>
-					</ul>
+					<ol>
+						<li>Seu nome</li>
+						<li>E-mail para receber o comprovante</li>
+						<li>Uma mensagem que quiser</li>
+						<li>Clicar em "Confirmar"</li>
+						<li>E está pronto o sorvetinho!</li>
+					</ol>
 				</div>
 
 				<div class="formulario">
