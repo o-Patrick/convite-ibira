@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300;700&display=swap');
 
 /* fontes (100; 400, 700)
 	font-family: 'Montserrat', sans-serif;
@@ -52,6 +52,7 @@ header {
 	background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url('img/1549_ibirapuera.png'), no-repeat;
   background-position: 50% 0;
   background-size: cover;
+	background-attachment: fixed;
 }
 
 .txt-chamada {
@@ -79,19 +80,19 @@ header {
 	margin-top: 2em;
 }
 
-button {
+/* .chamada button {
 	background-color: #ffff89;
 	border: none;
 	border-radius: 3px;
-	font-weight: 700;
+	font-size: 1.05em;
 	padding: 7px 5px;
 }
 
-button:hover {
+.chamada button:hover {
 	background-color: #fcfc43;
 	cursor: pointer;
-	transition: 130ms linear;
-}
+	transition: 150ms linear;
+} */
 
 .meio {
 	text-align: center;
@@ -182,4 +183,46 @@ button:hover {
 
 .passo-a-passo ol > li::marker {
   font-weight: bold;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset * {
+	display: block;
+}
+
+fieldset input, fieldset textarea {
+	padding: 7px 5px;
+	font-size: 12pt;
+}
+
+fieldset label {
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+button {
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-size: 14pt;
+	margin-top: 25px;
+	padding: 7px 15px;
+}
+
+button:hover {
+	background-color: #ffff62;
+	cursor: pointer;
+	transition: 150ms linear;
+}
+
+footer {
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+footer p {
+	text-align: center;
 }
