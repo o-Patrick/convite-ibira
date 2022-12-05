@@ -23,6 +23,13 @@
 			$mail->SMTPAuth = true;
 			$mail->SMTPSecure = "tls";
 			$mail->Port = 587;
+			$mail->SMTPOptions = array(
+				'ssl' => array(
+				'verify_peer' => false,
+				'verify_peer_name' => false,
+				'allow_self_signed' => true
+				)
+			);
 			$mail->Username = 'convite.para.bianca@gmail.com';
 			$mail->Password = 'akiv qmyn pvxf bbrj';
 
@@ -70,6 +77,7 @@
 		} catch (Exception $e) {
 			echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
 		} // try contrução e-mail
+		echo "<script>alert('Presença confirmada com sucesso!')</script>";
     echo "<meta http-equiv='refresh' content='0; index.html'>";
   } // if isset btnSubmit
 ?>
